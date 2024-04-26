@@ -1,0 +1,480 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+nav > h3{
+    font-size: 30px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: blue; /* Change color */
+    transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+nav ul li a:hover {
+    color: darkblue; /* Change color on hover */
+}
+.foundation{
+    color: red;
+}
+.banking{
+    color: green;
+}
+.home-content {
+    width: 100vw;
+    height: 88vh;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between;
+}
+.image-container {
+    flex: 1; /* Make the image container flexible */
+}
+
+.text-container {
+    flex: 1; /* Make the text container flexible */
+}
+.home-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 80vh;
+    margin-top: 20px;
+    object-fit: cover;
+}
+.text-container h1 {
+    font-size: 5em; /* Adjust the size of the heading */
+    margin-bottom: 10px; /* Add margin for spacing */
+}
+.text-container p{
+    font-size: 22px;
+}
+
+.page {
+    display: none;
+    padding: 20px;
+}
+
+
+#transferForm {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+.send-money-form {
+    max-width: 400px; /* Set maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #ccc; /* Add border for visual separation */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #f9f9f9; /* Set background color */
+}
+
+#sendMoneyPage h2 {
+    text-align: center; /* Center the heading */
+    font-size: 60px; /* Increase font size for emphasis */
+    margin-bottom: 20px; /* Add margin for spacing */
+    color: #2542b9;  /* Change heading color */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add margin between form groups */
+}
+
+label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Add margin below labels */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%; /* Set input width */
+    padding: 10px; /* Add padding */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+button[type="submit"] {
+    width: 100%; /* Set button width to fill the form */
+    background-color: #333; /* Set button background color */
+    color: #fff; /* Set button text color */
+    padding: 10px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Add cursor pointer on hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #63c45c; /* Change background color on hover */
+}
+.card-container {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center; /* Center the cards vertically */
+    gap: 90px;
+}
+.section-heading {
+    text-align: center; /* Center the heading */
+    font-size: 66px; /* Increase font size for emphasis */
+    margin-bottom: 20px; /* Add margin for spacing */
+    color: #2542b9; 
+    margin-top: 100px; /* Add space above the heading */
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 350px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Add background color */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Add padding */
+    gap: 20px;
+    
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+.card button {
+    margin-top: 10px; /* Adjust as needed */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.card button:hover {
+    background-color: #63c45c;
+}
+.card:hover {
+    transform: translateY(-5px); /* Move the card up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+}
+.contact-heading{
+    text-align: center; /* Center the heading */
+    font-size: 66px; /* Increase font size for emphasis */
+    margin-bottom: 20px; /* Add margin for spacing */
+    color: #2542b9; 
+    margin-top: 100px; 
+}
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #f4f4f4;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #f4f4f4;
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        color: blue;
+    }
+
+    nav ul li a:hover {
+        background-color: #ddd;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-icon-bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px auto;
+    }
+
+    .menu-open {
+        display: block;
+        position: fixed; /* Fix the position of the menu */
+        top: 70px; /* Adjust as needed */
+        left: 0;
+        width: 100%;
+        height: calc(100% - 70px); /* Cover the entire height below the nav */
+        /* background-color: rgba(0, 0, 0, 0.7); Semi-transparent background */
+        z-index: 999; /* Ensure it appears above other content */
+    }
+
+    .home-content {
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: center; /* Center the items horizontally */
+        text-align: center; /* Center the text */
+        padding-top: 70px; /* Adjust to leave space for the fixed nav */
+    }
+
+    .image-container,
+    .text-container {
+        width: 100%; /* Take up full width */
+        padding: 0 20px; /* Add padding for spacing */
+    }
+
+    .text-container {
+        padding-top: 20px; /* Add space between image and text */
+    }
+    .text-container h1 {
+        font-size: 2.5em; /* Adjust the size of the heading */
+        margin-bottom: 10px; 
+    }
+    .text-container p{
+        font-size: 22px;
+    }
+    .send-money-form {
+        max-width: 300px; /* Reduce form width for smaller screens */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    #sendMoneyPage h2 {
+        font-size: 40px; /* Decrease font size for the heading */
+    }
+    .section-heading {
+        font-size: 40px; /* Decrease font size for the services section heading */
+        margin-top: 50px; /* Decrease margin top for the services section heading */
+        margin-bottom: 10px; /* Adjust margin bottom for the services section heading */
+    }
+    input[type="text"],
+    input[type="number"] {
+        width: calc(100% - 20px); /* Adjust input field width */
+        /* Subtracting 20px for padding and border */
+    }
+    .card-container {
+        flex-direction: column; /* Change card layout to column for smaller screens */
+        align-items: center; /* Center cards vertically */
+        gap: 20px; /* Decrease gap between cards */
+    }
+
+    .card {
+        width: 60%; /* Adjust card width for smaller screens */
+        height: auto; /* Allow card height to adjust based on content */
+    }
+
+    .card img {
+        max-width: 100%; /* Ensure image fits within card width */
+        height: auto; /* Allow image height to adjust based on width */
+    }
+
+    .contact-heading {
+        font-size: 40px; /* Decrease font size for the contact section heading */
+        margin-top: 50px; /* Decrease margin top for the contact section heading */
+        margin-bottom: 10px; /* Adjust margin bottom for the contact section heading */
+    }
+
+    .contact-form {
+        max-width: 300px; /* Reduce form width for smaller screens */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+}
+@media only screen and (max-width: 425px) {
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    nav > h3{
+        font-size: 20px;
+    }
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #f4f4f4;
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        color: blue;
+    }
+
+    nav ul li a:hover {
+        background-color: #ddd;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-icon-bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px auto;
+    }
+
+    .menu-open {
+        display: block;
+        position: fixed; /* Fix the position of the menu */
+        top: 100px; /* Adjust as needed */
+        left: 0;
+        width: 100%;
+        height: calc(100% - 70px); /* Cover the entire height below the nav */
+        /* background-color: rgba(0, 0, 0, 0.7); Semi-transparent background */
+        z-index: 999; /* Ensure it appears above other content */
+    }
+
+    .home-content {
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: center; /* Center the items horizontally */
+        text-align: center; /* Center the text */
+        padding-top: 70px; /* Adjust to leave space for the fixed nav */
+    }
+
+    .image-container,
+    .text-container {
+        width: 100%; /* Take up full width */
+        padding: 0 20px; /* Add padding for spacing */
+    }
+
+    .text-container {
+        padding-top: 20px; /* Add space between image and text */
+    }
+    .text-container h1 {
+        font-size: 2em; /* Adjust the size of the heading */
+        margin-bottom: 10px; /* Add margin for spacing */
+    }
+    .text-container p {
+        font-size: 11px; /* Adjust font size for smaller screens */
+    }
+}
+
